@@ -1,0 +1,261 @@
+/* custom color  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #828286;
+  --main-text-color: #333333;
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
+/* ---------------------------------------- Navbar style css                  
+                ------------------------------------------------------------------------------------------------------- */
+
+.navbar-bg {
+  background-color: #fff;
+
+  padding: 2rem 0;
+  z-index: 99;
+  position: relative;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+.navbar li {
+  padding: 0 1rem;
+}
+.navbar li a {
+  font-size: 1.7rem;
+  font-weight: lighter;
+  position: relative;
+}
+.navbar li a:hover {
+  /* color:var(--primary-color) !important; */
+  text-shadow: 0 0.2rem 0.3rem rgba(255, 171, 171, 0.5);
+}
+.btn-style {
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: white;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+}
+/* .btn-style:hover {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: #D91A73;
+  color: #fff;
+  box-shadow: 0 0.2rem 0 0.5rem rgba(243, 236, 236, 0.5);
+} */
+.btn-style-border {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0 0.5rem rgba(183, 171, 255, 0.5);
+}
+
+.btn-style-border:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+/* ---------------------------------------- Navbar Ends                
+                ------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------- Header Section css                
+                ------------------------------------------------------------------------------------------------------- */
+
+header {
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+  /* background-color:aqua; */
+}
+
+.main-hero-container h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 3rem 0 5rem 0;
+  font-weight: lighter;
+  width: 75%;
+}
+.main-hero-container h3 {
+  font-weight: lighter;
+}
+/* right side imagaes target */
+
+.main-herosection-images img {
+  width: 90%;
+  height: 80%;
+  /* overflow: hidden; */
+}
+
+/* ---------------------------------------- Body style css               
+                ------------------------------------------------------------------------------------------------------- */
+
+.display-2 {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+.main-herosection-images img1 {
+  width: 100px;
+  height: 78%;
+}
+.cont-1 {
+  
+  text-transform: capitalize;
+  font: var(--f-p-serif);
+  letter-spacing: var(--f-p-serif-ls);
+  font-size: 1.7rem;
+  word-break: break-word;
+  display: block;
+  margin-bottom: 20px;
+}
+.cont-2{
+  font-weight: bold;
+  font: var(--f-p-serif);
+  letter-spacing:normal;
+
+}
+ .content-wrap{
+  margin-left: 110px;
+  /* font: var(--f-p-serif); */
+} 
+
+
+.img-fluid-1 {
+  width: 806px;
+  height: 605px;
+  align-items: center;
+}
+
+/* ---------------------------------------- footer style css                 
+                ------------------------------------------------------------------------------------------------------- */
+
+
+
+.footer {
+  padding: 5rem 0;
+  background-color: #182334;
+  color: #fff;
+}
+.footer h4{
+  color: #fff ;
+}y
+.footer a{
+  color: #fff;
+}
+.footer h5{
+  color: #fff ;
+}
+
+/* ---------------------------------------- responsive media queries                
+                ------------------------------------------------------------------------------------------------------- */
+
+@media (main-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px !important;
+  }
+}
+
+@media (main-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px !important;
+  }
+}
+
+/* --------------------------------- Contact US Section starts  
+                        -------------------------------------------------------*/
+                        .contactus-section {
+                          margin: 15rem 0;
+                        }
+                        
+                        .contact-leftside img {
+                         width: 370px;
+                          height: 390px;
+                        }
+                        
+                        .contact-input-feild {
+                          margin-bottom: 4rem;
+                        }
+                        
+                        .contact-rightside form .form-control {
+                          border: 1px solid #ced4da;
+                          -webkit-appearance: none;
+                          height: 5rem;
+                          border-radius: 0.5rem;
+                          font-size: 1.6rem;
+                          padding-left: 1rem;
+                          font-weight: lighter;
+                        }
+                        
+                        .contact-rightside form .form-check-input {
+                          width: 2rem;
+                          height: 2rem;
+                        }
+                        
+                        .form-checkbox-style {
+                          margin: 4rem 0;
+                        }
+                        
+                        .contact-rightside form .main-hero-para {
+                          font-size: 1.5rem;
+                          color: var(--text-color);
+                          margin: 0;
+                          font-weight: lighter;
+                          width: 75%;
+                          padding: 0 2rem;
+                        }
+                        /* --------------------------------- Contact US Section ends  
+                                                                        -------------------------------------------------------*/
+                        
