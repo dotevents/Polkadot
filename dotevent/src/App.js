@@ -99,6 +99,13 @@ function App() {
                     <span>
                       <img src={searchIcon} />
                     </span>
+                    <div className="cityName">
+                    Polkadot <span className="cityCount">2</span>
+                  </div>
+                  &nbsp;
+                  <div className="cityName">
+                    Kusama <span className="cityCount">2</span>
+                  </div>
                   </div>
                 </div>
               </div>
