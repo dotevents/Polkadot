@@ -384,8 +384,9 @@ function App() {
           </Row>
         </Container>
       </section>
-      
+     <Footer/>
     </div>
+    
   );
 }
 

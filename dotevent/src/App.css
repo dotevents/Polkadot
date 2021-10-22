@@ -264,3 +264,22 @@ body {
       }
 }
 
+/* ---------------------------------------- footer style css                 
+                ------------------------------------------------------------------------------------------------------- */
+
+                .footer {
+                  padding: 5rem 0;
+                  background-color: #182334;
+                  color: #fff;
+                }
+                .footer h4 {
+                  color: #fff;
+                  font-size: .8rem;
+                }
+                y .footer a {
+                  color: #fff;
+                }
+                .footer h5 {
+                  color: #fff;
+                }
+                
