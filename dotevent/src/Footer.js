@@ -1,47 +1,29 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function Footer() {
   return (
     <section className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-lg-10 mx-auto ">
-            <div className="row">
-              <div className="col-6 col-lg-3">
-                <h4>Add a conference</h4>
-
-                <br />
-
-               
-
-                
-
-                
-                <br />
-              </div>
-              <div className="col-6 col-lg-3">
-                <h4>Connect on GitHub</h4>
-
-            
-                <br />
-               
-                
-              </div>
-              <div className="col-6 col-lg-3">
-                <h4>Follow us on Twitter
-</h4>
-                <br/>
-               
-                
-                
-              </div>
-             
-            </div>
-            <hr />
-           
-          </div>
-        </div>
-      </div>
+      <Container>
+        <Row>
+          <Col md={12}>
+            <Navbar collapseOnSelect expand="lg" className="d-flex justify-content-end">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar id="responsive-navbar-nav">
+                <Nav className="customNav me-auto">
+                  <Nav.Link href="#">Add a conference</Nav.Link>
+                  <Nav.Link href="#">Connect on GitHub</Nav.Link>
+                  <Nav.Link href="#">Add a conference</Nav.Link>
+                </Nav>
+              </Navbar>
+            </Navbar>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }
