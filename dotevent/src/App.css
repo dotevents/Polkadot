@@ -47,9 +47,9 @@ body {
 }
 
 .heroSection h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 60px;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 75px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -57,8 +57,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #999;
-  margin-top: 0.75em;
-  margin-bottom: 1em;
 }
 
 .heroSection button {
@@ -108,6 +106,8 @@ body {
   border-radius: 6px;
   padding: 20px;
   margin-top: 40px;
+  position: sticky;
+  top: 25px;
 }
 
 .filterLocation {
@@ -153,6 +153,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 25px;
+  margin: 15px 0;
+  cursor: pointer;
 }
 
 .cityCount {
@@ -176,6 +178,7 @@ body {
   padding: 40px;
   position: relative;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .eventCard .tag {
@@ -266,22 +269,3 @@ body {
       }
 }
 
-/* ---------------------------------------- footer style css                 
-                ------------------------------------------------------------------------------------------------------- */
-
-                .footer {
-                  padding: 5rem 0;
-                  background-color: #182334;
-                  color: #fff;
-                }
-                .footer h4 {
-                  color: #fff;
-                  font-size: .9rem;
-                }
-                y .footer a {
-                  color: #fff;
-                }
-                .footer h5 {
-                  color: #fff;
-                }
-                

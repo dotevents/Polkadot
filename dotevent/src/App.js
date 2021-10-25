@@ -9,7 +9,6 @@ import Nav from "react-bootstrap/Nav";
 import HeroImage from "./Frame.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
 import "./App.css";
 import Footer from "./Footer";
@@ -27,12 +26,12 @@ function App() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="customNav">
-                <Nav.Link href="/features">General</Nav.Link>
-                <Nav.Link href="/pricing">Meetup</Nav.Link>
-                <Nav.Link href="/pricing">AMA</Nav.Link>
-                <Nav.Link href="/pricing">Event</Nav.Link>
-                <Nav.Link href="/pricing">Learning</Nav.Link>
-                <Nav.Link className="navCta" href="/pricing">
+                <Nav.Link href="#">General</Nav.Link>
+                <Nav.Link href="#">Meetup</Nav.Link>
+                <Nav.Link href="#">AMA</Nav.Link>
+                <Nav.Link href="#">Event</Nav.Link>
+                <Nav.Link href="#">Learning</Nav.Link>
+                <Nav.Link className="navCta" href="#">
                   Add Conference
                 </Nav.Link>
               </Nav>
@@ -47,7 +46,7 @@ function App() {
             <Col md={6}>
               <h1>Find your next tech conference in the Polkadot ecosystem</h1>
               <p>
-                Open-source and crowd-sourced list of<br></br> meetup around pulkadot
+                Open-source and crowd-sourced list of meetup around pulkadot
                 ecosystem
               </p>
               <button>Get Started</button>
@@ -102,7 +101,7 @@ function App() {
                     <div className="cityName">
                     Polkadot <span className="cityCount">2</span>
                   </div>
-                  &nbsp;
+                  
                   <div className="cityName">
                     Kusama <span className="cityCount">2</span>
                   </div>
@@ -153,7 +152,7 @@ function App() {
                     </div>
                     <div className="twitterUsserName">
                       <img src={twitterLogo} />&nbsp;@ParityTech
-                    <span className="codeConduct"><Nav.Link href="/features">Code Of Conduct</Nav.Link></span></div>
+                    <span className="codeConduct">Code Of Conduct</span></div>
                     
                     <button className="hashTag">#Parity Technologies</button>
                   </div>
