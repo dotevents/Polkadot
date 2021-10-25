@@ -9,33 +9,13 @@ function Footer() {
             <div className="row">
               <div className="col-6 col-lg-3">
                 <h4>Add a conference</h4>
-
-                <br />
-
-               
-
-                
-
-                
-                <br />
               </div>
               <div className="col-6 col-lg-3">
-                <h4>Connect on GitHub</h4>
-
-            
-                <br />
-               
-                
+                <h4>Connect on GitHub</h4>  
               </div>
               <div className="col-6 col-lg-3">
-                <h4>Follow us on Twitter
-</h4>
-                <br/>
-               
-                
-                
-              </div>
-             
+                <h4>Follow us on Twitter</h4>  
+              </div> 
             </div>
             <hr />
            
