@@ -47,7 +47,7 @@ function App() {
             <Col md={6}>
               <h1>Find your next tech conference in the Polkadot ecosystem</h1>
               <p>
-                Open-source and crowd-sourced list of meetup around pulkadot
+                Open-source and crowd-sourced list of<br></br> meetup around pulkadot
                 ecosystem
               </p>
               <button>Get Started</button>
@@ -153,7 +153,7 @@ function App() {
                     </div>
                     <div className="twitterUsserName">
                       <img src={twitterLogo} />&nbsp;@ParityTech
-                    <span className="codeConduct">Code Of Conduct</span></div>
+                    <span className="codeConduct"><Nav.Link href="/features">Code Of Conduct</Nav.Link></span></div>
                     
                     <button className="hashTag">#Parity Technologies</button>
                   </div>
