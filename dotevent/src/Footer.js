@@ -1,31 +1,47 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 function Footer() {
-  return (
-    <section className="footer">
-      <Container>
-        <Row>
-          <Col md={12}>
-            <Navbar collapseOnSelect expand="lg" className="d-flex justify-content-end">
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar id="responsive-navbar-nav">
-                <Nav className="customNav me-auto">
-                  <Nav.Link href="#">Add a conference</Nav.Link>
-                  <Nav.Link href="#">Connect on GitHub</Nav.Link>
-                  <Nav.Link href="#">Add a conference</Nav.Link>
-                </Nav>
-              </Navbar>
-            </Navbar>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
+	
+	return (
+		<section className="footer text-base">
+			<div className="container">
+				<div className="row">
+					<div className="col-12 col-lg-10 mx-auto ">
+						<div className="row">
+							<div className="col-3 col-lg-3">
+								<Nav.Link href="/add-conference">
+									<h4 className="cnt-1">Add a conference</h4>
+								</Nav.Link>
+								{/* <h4>Add a conference</h4> */}
+							</div>
+							<div className="col-3 col-lg-3">
+								<Nav.Link href="https://github.com/dotevents?tab=repositories">
+									<h4 className="cnt-1">Connect on GitHub</h4>
+								</Nav.Link>
+							</div>
+							<div className="col-3 col-lg-3">
+								<Nav.Link href="https://twitter.com/home">
+									<h4 className="cnt-1">
+										Follow us on Twitter
+									</h4>
+								</Nav.Link>
+							</div>
+							<div className="col-3 col-lg-3">
+								<Nav.Link href="/Contact">
+									<h4 className="cnt-1">
+										Contact
+									</h4>
+								</Nav.Link>
+								{/* is that okay? no add conferece add is up and conference is so same line okay. */}
+							</div>
+						</div>
+						<hr />
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
 
 export default Footer;

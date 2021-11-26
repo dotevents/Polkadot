@@ -269,3 +269,19 @@ body {
       }
 }
 
+.cont-1{
+  text-align: center;
+  text-transform: capitalize;
+  padding: 300px;
+  
+}
+
+.cnt-1{
+  text-transform: capitalize;
+  color: black;
+  text-overflow: ellipsis;
+}
+
+.cnt-1 :hover{
+  text-transform: inherit;
+}
