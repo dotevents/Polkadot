@@ -295,7 +295,9 @@ const Hits = ({ hits }) => {
                 <img src={twitterLogo} alt="" className="mr-4" />
                 <span>{hit.twitter} .</span>
                 <span className="codeConduct">
-                  <Nav.Link href="/Polkadot.net">code of conduct</Nav.Link>
+                 <Nav.Link href="https://polkadot.network/">
+										code of conduct
+									</Nav.Link>
                 </span>
               </div>
             )}
