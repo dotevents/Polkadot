@@ -280,10 +280,17 @@ body {
   margin: 30px 0;
   background-color: #fff;
 }
-.codeConduct {
+.codeConduct a {
   color: var(--blue-color);
   padding-left: 20px;
   font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.codeConduct a:hover{
+  text-decoration: none;
+  color: var(--blue-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -324,6 +331,17 @@ body {
     padding: 30px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .twitterUsserName a span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 130px;
+    display: block;
+  }
+}
+
 
 .addFormSection .addFormImg {
   padding: 100px 30px;
@@ -384,13 +402,13 @@ body {
   margin-right: 5px;
 }
 
-.twitterUsserName span {
+/* .twitterUsserName a span {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   max-width: 130px;
   display: block;
-}
+} */
 
 .contact {
   padding: 7em 1em;

@@ -330,12 +330,7 @@ const Hits = ({ hits }) => {
 								</a>
 								<span className="codeConduct">
 									<a
-										href={hit.cocUrl}
-										style={{
-											textDecoration: "none",
-											color: "black",
-										}}
-									>
+										href={hit.cocUrl}>
 										code of conduct
 									</a>
 								</span>
