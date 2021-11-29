@@ -7,6 +7,7 @@ import AMA from './components/AMA';
 import Event from './components/Event';
 import Learn from './components/Learn';
 import Contact from './components/Contact';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 	return (

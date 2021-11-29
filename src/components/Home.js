@@ -2,14 +2,13 @@ import logo from "../dotevent-logo.png";
 import searchIcon from "../search.svg";
 import calenderIcon from "../calender-icon.svg";
 import twitterLogo from "../twitter-logo.svg";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import HeroImage from "../Frame.png";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import Col from 'react-bootstrap/Col';
 import "../App.css";
 import Footer from "../Footer";
 import { useState, useEffect } from "react";
@@ -71,9 +70,9 @@ function Home() {
     <div className="App">
       <header className="App-header">
         <Navbar collapseOnSelect expand="lg">
-          <Container>
+          <Container md>
             <Navbar.Brand href="/home">
-              <img style={{ width: "160px" }} src={logo} alt="" />
+              <img width="150" src={logo} alt="" />
             </Navbar.Brand>
             {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
             <div id="responsive-navbar-nav">
@@ -103,7 +102,7 @@ function Home() {
       </header>
       {/* hello bro are you here? */}
       <section className="heroSection">
-        <Container>
+        <Container md>
           <Row>
             <Col md={6}>
               <h1>Find your next tech conference in the Polkadot ecosystem</h1>
@@ -125,7 +124,7 @@ function Home() {
       {/* which page are we working on?  yes show me where the cards are. */}
       <section className="searchBar">
         <InstantSearch searchClient={searchClient} indexName="prod_conferences">
-          <Container>
+          <Container md>
             <CustomSearchBox />
             <Row>
               {/* <Col md={4}>
@@ -275,7 +274,7 @@ const Hits = ({ hits }) => {
       {hits.map((hit) => (
         <Col md={12} key={hit.ObjectID}>
           {/* {setNames(names[hit.name])} */}
-          <div className="eventCard">
+          <a href="" className="eventCard">
             <span className="tag">{hit.online ? "Online" : "In person"}</span>
             <div className="displayFlex">
               <div className="eventTitle">{hit.name}</div>
@@ -302,7 +301,7 @@ const Hits = ({ hits }) => {
             )}
 
             <button className="hashTag">@ {hit.name}</button>
-          </div>
+          </a>
         </Col>
       ))}
     </div>

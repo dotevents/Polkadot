@@ -13,7 +13,7 @@ function Contact() {
         <Navbar collapseOnSelect expand="lg">
           <Container>
             <Navbar.Brand href="/">
-              <img width='160' src={logo} alt="" />
+              <img width='150' src={logo} alt="" />
             </Navbar.Brand>
             {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
             <div id="responsive-navbar-nav">

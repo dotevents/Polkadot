@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-  padding: 20px 0;
+  padding: 20px 0 !important;
 }
 
 .header-seperator {
@@ -85,6 +85,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #999;
+  margin-bottom: 15px;
 }
 
 .heroSection button {
@@ -215,6 +216,14 @@ body {
   position: relative;
   margin-bottom: 40px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: initial;
+}
+
+.eventCard:hover {
+  text-decoration: none;
+  color: initial;
 }
 
 .eventCard .displayFlex {
@@ -311,7 +320,7 @@ body {
     margin-top: 0;
   }
 
-  .eventCard{
+  .eventCard {
     padding: 30px;
   }
 }
@@ -375,10 +384,32 @@ body {
   margin-right: 5px;
 }
 
+.twitterUsserName span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 130px;
+  display: block;
+}
+
 .contact {
   padding: 7em 1em;
   display: flex;
   align-items: center;
+}
+
+.contact h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+.contact a {
+  color: var(--brand-color);
+}
+
+.footer {
+  padding: 20px 0;
 }
 
 .footer .footer-nav {
@@ -436,7 +467,7 @@ body {
   .heroSection img {
     display: none;
   }
-  .footer .footer-container{
+  .footer .footer-container {
     text-align: center;
   }
 }
@@ -455,4 +486,14 @@ body {
 
 .cnt-1 :hover {
   text-transform: inherit;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
 }
